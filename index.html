@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .main-content {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .photo-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .photo-container img {
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        
+        .hand-link {
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .hand-link img {
+            width: 80px;
+            transition: transform 0.3s;
+        }
+        
+        .hand-link:hover img {
+            transform: scale(1.1);
+        }
+        
+        .hand-link span {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à minha página pessoal!</h1>
+        <p>Esta é uma página simples com minha foto e um link para a página 2</p>
+    </header>
+    
+    <div class="main-content">
+        <div class="photo-container">
+            <!-- Substitua pelo caminho da sua foto -->
+            <img src="sua_foto.jpg" alt="Minha Foto">
+        </div>
+        
+        <div class="hand-link" onclick="window.location.href='pagina2.html'">
+            <!-- Ícone de mão (substitua por uma imagem real se preferir) -->
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMzg0IDE2MEgyODhWMTQ0QzI4OCA5OS44IDI1Mi4yIDY0IDIwOCA2NFMxMjggOTkuOCAxMjggMTQ0djE2SDMyQzE0LjMgMTYwIDAgMTc0LjMgMCAxOTJ2OTZjMCAxNy43IDE0LjMgMzIgMzIgMzJoMTI4djMyYzAgNDQuMiAzNS44IDgwIDgwIDgwczgwLTM1LjggODAtODB2LTMyaDEyOGMxNy43IDAgMzItMTQuMyAzMi0zMlYxOTJjMC0xNy43LTE0LjMtMzItMzItMzJ6TTE2MCAxNDRjMC0yNi41IDIxLjUtNDggNDgtNDhzNDggMjEuNSA0OCA0OHYxNkgxNjBWMTQ0em0xNjAgMjQwYzAgOC44LTcuMiAxNi0xNiAxNkg0OGMtOC44IDAtMTYtNy4yLTE2LTE2VjE5MmgxMjh2MzJoLTMyYzAtOC44IDcuMi0xNiAxNi0xNmgzMmM4LjggMCAxNiA3LjIgMTYgMTZoLTMydjE2aDEyOHYtMTZoLTMyYzAtOC44IDcuMi0xNiAxNi0xNmgzMmM4LjggMCAxNiA3LjIgMTYgMTZoLTMydjE2aDEyOHYtMTZoLTMyYzAtOC44IDcuMi0xNiAxNi0xNmgzMmM4LjggMCAxNiA7LjIgMTYgMTZoLTMydjE2aDEyOHYtOTZ6IiBmaWxsPSIjMDAwMDAwIi8+PC9zdmc+" alt="Mão apontando">
+            <span>Página 2</span>
+        </div>
+    </div>
+</body>
+</html>
