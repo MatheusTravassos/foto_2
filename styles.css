@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <style>
+        /* Estilo Minimalista com Fundo Branco */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff; /* Fundo branco */
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
+        /* Cabeçalho */
+        header {
+            background-color: #ffffff;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #222;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Conteúdo Principal */
+        .main-container {
+            display: flex;
+            flex: 1;
+            padding: 2rem;
+        }
+
+        /* Container da Foto */
+        .photo-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .photo-frame {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #f8f8f8;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Link com Ícone de Mão */
+        .hand-link {
+            width: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #555;
+        }
+
+        .hand-link:hover {
+            transform: translateX(5px);
+            color: #000;
+        }
+
+        .hand-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 0.5rem;
+        }
+
+        .link-text {
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Olá, eu sou [Seu Nome]</h1>
+        <p class="subtitle">Bem-vindo à minha página pessoal</p>
+    </header>
+    
+    <div class="main-container">
+        <div class="photo-section">
+            <div class="photo-frame">
+                <!-- Substitua pela sua foto -->
+                <img src="sua_foto.jpg" alt="Minha Foto">
+            </div>
+        </div>
+        
+        <a href="pagina2.html" class="hand-link">
+            <!-- Ícone de mão estilizado -->
+            <svg class="hand-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor" d="M384 160h-96V144c0-44.2-35.8-80-80-80s-80 35.8-80 80v16H32c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32h128v32c0 44.2 35.8 80 80 80s80-35.8 80-80v-32h128c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zM160 144c0-26.5 21.5-48 48-48s48 21.5 48 48v16H160V144zm160 240c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V192h128v32H96c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h128v16h-32c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h128v96z"/>
+            </svg>
+            <span class="link-text">Ir para<br>Página 2</span>
+        </a>
+    </div>
+</body>
+</html>
